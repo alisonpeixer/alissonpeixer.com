@@ -29,7 +29,7 @@ Stacks used<br>
 ---
 
 <p align="center">
-    <span class="copyright">Done with ❤️ by <a href="https://github.com/alissonpeixer">Alisson Peixer</a></span>
+    <span class="copyright">Done with ❤️ by <a href="https://github.com/alizof">Alisson Peixer</a></span>
     <br><br><br>
    <img src="https://avatars.githubusercontent.com/u/89995763" width="100px" alt="picture to user">
 </p>
