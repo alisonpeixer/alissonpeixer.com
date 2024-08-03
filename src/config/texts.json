@@ -1,0 +1,54 @@
+[
+  {
+    "home": {
+      "slack": "Desenvolvedor Full Stack",
+      "h1": " Me proponha um desafio",
+      "h2": "que lhe darei a solução!",
+      "picUrl": "/mypicture.png",
+      "picAlt": "Foto de Alisson Peixer sorrindo!"
+    }
+  },
+  {
+    "bio": {
+      "h4": "Sobre mim",
+      "h1": "Olá, me chamo Alisson,",
+      "p": "Estou sempre em busca de me aprimorar com muita dedicação! Todo o conhecimento que acumulei até hoje foi resultado do meu autodidatismo e da minha constante vontade de aprender mais. Já estou na área de desenvolvimento fullstack há mais de %YEARS% anos, mas minha paixão pela tecnologia começou a muito tempo!"
+    }
+  },
+  {
+    "stack": {
+      "h4": "Stacks",
+      "h1": "Algumas das stacks que tenho conhecimento",
+      "h2": "ou que já usei.",
+      "listStacks": {
+        "1": "HTML5",
+        "2": "CSS3",
+        "3": "JavaScript",
+        "4": "TypeScript",
+        "5": "Python",
+        "6": "NodeJS",
+        "7": "React",
+        "8": "React Native",
+        "9": "Prisma",
+        "10": "SQLite"
+      }
+    }
+  },
+  {
+    "projects":[
+      {
+        "satack":"FullStack - NextJS - ReactJS",
+        "name": "LiveChat",
+        "description": "Um sistema de chat, em tempo real, via túnel SocketId.",
+        "url": "https://chat.alissonpeixer.com/"
+      },
+      {
+        "satack": "FullStack - NuxtJS - VueJS",
+        "name": "Twitter",
+        "description": "Um simples clone fullstack do twitter.",
+         "url": "https://twitter.alissonpeixer.com/"
+
+      }
+    ]
+  }
+]

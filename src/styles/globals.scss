@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: theme('colors.slate.100');
+}
+
+.bg-radind {
+  background: linear-gradient(
+    91.43deg,
+    #00ffb2 52.11%,
+    rgba(0, 255, 178, 0.15625) 162.82%,
+    #00ffb2 162.83%
+  );
+}
+
+.fade_class div {
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+.fade_class_header div {
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+$animationDelay: 1;
+
+@for $i from 1 through 15 {
+  .fade_class_header div {
+    animation-delay: calc(3 / 30) s;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+$animationDelay: 3;
+
+@for $i from 1 through 15 {
+  .fade_class div:nth-of-type(#{$i}) {
+    animation-delay: calc(0.3 + $i / 10) s;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-grad {
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-100deg, #0c0b0b, #2d2f33);
+  background-size: 700% 700%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+// Scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
