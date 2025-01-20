@@ -1,10 +1,16 @@
-export const ProfileInlus = () => {
+import clsx from "clsx"
+
+interface Props {
+  className?: string
+}
+
+export const ProfileInlus = ({className}:Props) => {
     return (
       <svg
         width="532"
         height="532"
         viewBox="0 0 532 532"
-        className="w-80  min-w-[320px] max-w-[400px]  drop-shadow-2xl"
+        className={clsx('w-80  min-w-[320px] max-w-[400px]  drop-shadow-2xl', className)}
       >
         <circle cx="270.75986" cy="260.93427" r="86.34897" fill="#ffb6b6" />
         <polygon

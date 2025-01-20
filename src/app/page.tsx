@@ -75,8 +75,9 @@ export default function Home() {
         </section>
         <section className="flex justify-around h-screen items-center gap-28" id="about-me">
             
-          <ProfileInlus/>
-          <TypographyStylesProvider >
+          <ProfileInlus className="hidden lg:flex w-[700px]"/>
+
+          <TypographyStylesProvider className="p-4">
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </TypographyStylesProvider>
 
