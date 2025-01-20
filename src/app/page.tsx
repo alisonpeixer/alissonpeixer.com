@@ -1,12 +1,16 @@
 'use client'
 
-import { Burger, Button, Image, NavLink, Tabs } from "@mantine/core";
+import { Burger, Button, Image, NavLink, Tabs, TypographyStylesProvider } from "@mantine/core";
 import clsx from 'clsx';
 import React, { useState } from "react";
 
 import { headerConfig } from "@/config/header";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useDisclosure } from '@mantine/hooks';
+
+import { ReactTyped } from "react-typed";
+
+import { ProfileInlus } from "@/assets/profileInlus";
 
 export default function Home() {
 
@@ -15,6 +19,7 @@ export default function Home() {
 
   const { navItens } = headerConfig;
 
+  const html = '<h1>Sobre mim</h1> Estou sempre em busca de me aprimorar com muita dedicação! Todo o conhecimento que acumulei até hoje foi resultado do meu autodidatismo e da minha constante vontade de aprender mais. Já estou na área de desenvolvimento fullstack há mais de 7 anos, mas minha paixão pela tecnologia começou a muito tempo!';
 
 
   return (
@@ -55,14 +60,26 @@ export default function Home() {
       <main className="container mx-auto">
 
 
-        <section className="flex  justify-between h-screen items-center" id="about-me">
+        <section className="flex  justify-between h-screen items-center background" id="home">
+
           <div>
-            <h1 className="text-5xl font-bold">Olá, eu sou o Alisson!</h1>
-            <p className="text-xl">Desenvolvedor FullStack</p>
+            <h1 className="text-5xl font-bold">Olá, eu sou o Alisson,</h1>
+            <p className="text-xl">
+            <ReactTyped strings={["Desenvolvedor FullStack"]} typeSpeed={40} cursorChar="!"/>
+            </p>
+            
           </div>
           <div className="w-2/4 hidden lg:flex  items-center justify-center">
             <Image src="/mypicture.png" alt="developer" className="w-[400px]" />
           </div>
+        </section>
+        <section className="flex justify-around h-screen items-center gap-28" id="about-me">
+            
+          <ProfileInlus/>
+          <TypographyStylesProvider >
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </TypographyStylesProvider>
+
         </section>
         
       </main>

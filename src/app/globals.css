@@ -12,3 +12,25 @@
     font-size: 1rem;
     margin-bottom: 14px;
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #242424, #4e4e4e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+  
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
