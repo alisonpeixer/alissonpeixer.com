@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header {
+    background-color: rgba(0, 85, 255, 0);
+    backdrop-filter: blur(3.25rem);
+}
+
+.mantine-NavLink-label {
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
